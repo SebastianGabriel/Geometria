@@ -1,5 +1,5 @@
 
-public class Rectangulo {
+public class Rectangulo extends Figura {
     private int largo;
     private int alto;
 
@@ -8,8 +8,7 @@ public class Rectangulo {
         this.largo = largo;
     }
 
-    public Rectangulo() {
-    }
+    public Rectangulo() {}
 
     public void setAlto(int alto) {
         this.alto = alto;
@@ -26,15 +25,15 @@ public class Rectangulo {
     public int getLargo() {
         return largo;
     }
-
-    public int area() {
+    @Override
+    public double area() {
         return (this.alto * this.largo);
     }
-
-    public int perimetro() {
+    @Override
+    public double perimetro() {
         return (this.alto * 2 + this.largo * 2);
     }
-
+    @Override
     public void imprimir() {
         System.out.println("Rectangulo:");
         System.out.println("Largo :" + this.largo);
@@ -42,4 +41,5 @@ public class Rectangulo {
         System.out.println("Area " + this.area());
         System.out.println("Perimetro " + this.perimetro());
     }
+   
 }

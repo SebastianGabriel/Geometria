@@ -1,9 +1,7 @@
-public class Figura {
-    public double area() {
-        return 0;
-    }
+public abstract class Figura {
+    public abstract double area();
 
-    public double perimerto() {
-        return 0;
-    }
+    public abstract double perimetro(); 
+
+    public abstract void imprimir(); 
 }

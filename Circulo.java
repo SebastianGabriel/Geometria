@@ -1,5 +1,5 @@
 
-public class Circulo {
+public class Circulo  extends Figura{
     private double radio;
 
     public Circulo(double radio) {
@@ -16,12 +16,12 @@ public class Circulo {
     public void setRadio(double radio) {
         this.radio = radio;
     }
-
+    @Override
     public double area() {
         return (Math.PI * Math.pow(this.radio, 2));
     }
-
-    public double perimerto() {
+    @Override
+    public double perimetro() {
         return (Math.PI * this.radio * 2);
     }
 
@@ -29,7 +29,6 @@ public class Circulo {
         System.out.println("Circulo");
         System.out.println("Radio : " + this.radio);
         System.out.println("Area :" + this.area());
-        System.out.println("Perimetro " + this.perimerto());
+        System.out.println("Perimetro " + this.perimetro());
     }
-
 }
