@@ -1,5 +1,5 @@
 
-public class Triangulo extends Figura {
+public class Triangulo extends Figura{
     private int base;
     private int altura;
 
@@ -42,6 +42,11 @@ public class Triangulo extends Figura {
         System.out.println("Altura: " + this.altura);
         System.out.println("Area: " + this.area());
         System.out.println("Perimetro " + this.perimetro());
+    }
+
+    @Override
+    public void dibujar() {
+         System.out.println("T");
     }
 
 }

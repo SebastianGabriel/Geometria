@@ -1,5 +1,5 @@
 
-public class Circulo  extends Figura{
+public class Circulo extends Figura{
     private double radio;
 
     public Circulo(double radio) {
@@ -30,5 +30,10 @@ public class Circulo  extends Figura{
         System.out.println("Radio : " + this.radio);
         System.out.println("Area :" + this.area());
         System.out.println("Perimetro " + this.perimetro());
+    }
+
+    @Override
+    public void dibujar() {
+         System.out.println("O");
     }
 }
